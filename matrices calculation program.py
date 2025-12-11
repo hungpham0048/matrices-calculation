@@ -3,10 +3,8 @@ import numpy as np  # import numpy with the shortcut "np"
 # Book1 calculation
 print("\nCalculate matrices in Book1\n")
 # set up matrix as a variable
-matrix1 = np.loadtxt('Book1.csv', delimiter=',', skiprows=1,
-                     max_rows=3)  # skiprows =  x: bo qua x lines
-matrix2 = np.loadtxt('Book1.csv', delimiter=',', skiprows=5,
-                     max_rows=3)  # max_rows = x: doc toi da x rows
+matrix1 = np.loadtxt('Book1.csv', delimiter=',', skiprows=1, max_rows=3)  # skiprows =  x: bo qua x lines
+matrix2 = np.loadtxt('Book1.csv', delimiter=',', skiprows=5, max_rows=3)  # max_rows = x: doc toi da x rows
 
 # print the matrices
 print(f"Matrix1:\n{matrix1}")  # \n xuong dong
@@ -57,3 +55,4 @@ elif matrix2_2.shape[1] == matrix2_1.shape[0]:
     print(f"Matrix 2.2 x Matrix 2.1:\n {mul2}")
 else:
     print("\nThe sizes are invalid for multiplication!")
+
